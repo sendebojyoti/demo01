@@ -1,24 +1,40 @@
 pipeline {
-agent any
+    agent any
     stages {
-        stage ('Build') {
+        stage('Build') {
             steps {
-                        sh   echo "${JAVA_HOME}, is proceeding..."
-                  }
+                echo 'We are Starting the Testing'
+
+            }
         }
-//         stage ('Test') {
-//
-//         }
-//         stage ('QA') {
-//
-//         }
-//         stage ('Deploy') {
-//
-//
-//         }
-//         stage ('Monitor') {
-//
-//         }
+        stage('Test') {
+            steps {
+                echo 'We are Starting the Testing'
+
+            }
+
+        }
+        stage('QA') {
+            steps {
+                echo 'We are Starting the Testing'
+
+            }
+
+        }
+        stage('Deploy') {
+            steps {
+                echo 'We are Starting the Testing'
+
+            }
+
+        }
+        stage('Monitor') {
+
+            steps {
+                echo 'We are Starting the exit'
+
+            }
+        }
 
     }
- }
+}
