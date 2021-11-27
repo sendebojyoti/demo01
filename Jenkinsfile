@@ -3,7 +3,7 @@ agent any
     stages {
         stage ('Build') {
             steps {
-                            echo "${JAVA_HOME}, is proceeding..."
+                        sh   echo "${JAVA_HOME}, is proceeding..."
                   }
         }
 //         stage ('Test') {
