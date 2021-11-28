@@ -13,7 +13,7 @@ pipeline {
             post {
                 success {
                     echo "Now Archiving the Artifacts...."
-                    // archiveArtifacts artifacts: '**/*'
+                    archiveArtifacts artifacts: '**/*'
                 }
             }
         }
