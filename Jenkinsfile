@@ -19,9 +19,7 @@ pipeline {
         stage('Create a Docker Image') {
             steps {
                 sh "pwd"
-//                sh "ls -a"
                 sh "docker build . -t sendebojyoti:latest"
-
             }
 
         }
