@@ -22,7 +22,7 @@ pipeline {
 //                sh "ls -a"
  //               sh "docker build .t  sendebojyoti:latest"
                 script {
-                    dockerImage = docker.build sendebojyoti:latest""
+                    dockerImage = docker build . "sendebojyoti:latest"
                 }
             }
 
