@@ -12,18 +12,16 @@ pipeline {
             post {
                 success {
                     echo "Now Archiving the Artifacts...."
-                   // archiveArtifacts artifacts: '**/*'
+                    // archiveArtifacts artifacts: '**/*'
                 }
             }
         }
-        stage('Create a Docker Image'){
-            steps{
+        stage('Create a Docker Image') {
+            steps {
                 sh "pwd"
 //                sh "ls -a"
- //               sh "docker build .t  sendebojyoti:latest"
-                script {
-                    dockerImage = docker build . "sendebojyoti:latest"
-                }
+                sh "docker build . -t sendebojyoti:latest"
+
             }
 
         }
